@@ -1,0 +1,10 @@
+# CSR Coding Workbench - local edition
+# Install with:  pip install -r requirements.txt
+# Then run with: streamlit run csr_coder.py
+
+streamlit>=1.37,<2          # the window the tool runs in
+anthropic>=0.40,<1          # talks to Claude with your own API key
+pdfplumber>=0.11,<1         # reads the report's text, page by page
+openpyxl>=3.1,<4            # writes the .xlsx export
+pandas>=2.0,<3              # holds the rows and reads your reference spreadsheet
+XlsxWriter>=3.1,<4          # optional: a second .xlsx engine, if openpyxl is unavailable
